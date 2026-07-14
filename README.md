@@ -12,6 +12,4 @@
 
 ### GrowLauncher Script :
 
-* `sendWebhook Api.`
-
-* [Click Here](./GrowLauncher)
+* [sendWebhook Api](./GrowLauncher)
