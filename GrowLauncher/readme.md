@@ -1,17 +1,14 @@
 # Lunix API
 
-```{=html}
 <p align="center">
-```
-`<img src="https://lunix.space/assets/growlauncher.png" alt="gl" width="100%">`{=html}
-```{=html}
+  <img src="https://lunix.space/assets/growlauncher.png" alt="gl" width="100%">
 </p>
-```
+
 Lightweight Lua API for GrowLauncher.
 
 ## Installation
 
-``` lua
+```lua
 local api = load(fetch("https://lunix.space/assets/lunix.lua"))()
 ```
 
@@ -23,34 +20,34 @@ Sends a Discord webhook through the Lunix webhook gateway.
 
 #### Properties
 
-  Property                  Type         Required  Description
-  ------------------------- ----------- ---------- ----------------------------
-  `url`                     `string`       Yes     Discord webhook URL.
-  `content`                 `string`        No     Plain message content.
-  `username`                `string`        No     Override webhook username.
-  `avatar_url`              `string`        No     Override webhook avatar.
-  `embed.title`             `string`        No     Embed title.
-  `embed.description`       `string`        No     Embed description.
-  `embed.color`             `number`        No     Decimal embed color.
-  `embed.author.name`       `string`        No     Author name.
-  `embed.author.icon_url`   `string`        No     Author icon URL.
-  `embed.footer.text`       `string`        No     Footer text.
-  `embed.footer.icon_url`   `string`        No     Footer icon URL.
-  `embed.thumbnail.url`     `string`        No     Thumbnail image URL.
-  `embed.image.url`         `string`        No     Embed image URL.
-  `embed.fields`            `table[]`       No     Array of embed fields.
+| Property | Type | Required | Description |
+|---|---|---|---|
+| `url` | `string` | Yes | Discord webhook URL. |
+| `content` | `string` | No | Plain message content. |
+| `username` | `string` | No | Override webhook username. |
+| `avatar_url` | `string` | No | Override webhook avatar. |
+| `embed.title` | `string` | No | Embed title. |
+| `embed.description` | `string` | No | Embed description. |
+| `embed.color` | `number` | No | Decimal embed color. |
+| `embed.author.name` | `string` | No | Author name. |
+| `embed.author.icon_url` | `string` | No | Author icon URL. |
+| `embed.footer.text` | `string` | No | Footer text. |
+| `embed.footer.icon_url` | `string` | No | Footer icon URL. |
+| `embed.thumbnail.url` | `string` | No | Thumbnail image URL. |
+| `embed.image.url` | `string` | No | Embed image URL. |
+| `embed.fields` | `table[]` | No | Array of embed fields. |
 
 #### Field Object
 
-  Property   Type         Required
-  ---------- ----------- ----------
-  `name`     `string`       Yes
-  `value`    `string`       Yes
-  `inline`   `boolean`       No
+| Property | Type | Required |
+|---|---|---|
+| `name` | `string` | Yes |
+| `value` | `string` | Yes |
+| `inline` | `boolean` | No |
 
 ## Example
 
-``` lua
+```lua
 local api = load(fetch("https://lunix.space/assets/lunix.lua"))()
 
 api.sendWebhook({
@@ -80,10 +77,6 @@ api.sendWebhook({
 
 ## Showcase
 
-```{=html}
 <p align="center">
-```
-`<img src="https://lunix.space/assets/output.png" alt="skrinsot" width="900">`{=html}
-```{=html}
+  <img src="https://lunix.space/assets/output.png" alt="skrinsot" width="900">
 </p>
-```
