@@ -1,27 +1,27 @@
-## LunixScript
+## L u n i X
 
 <p align="center">
   <img src="https://lunix.space/assets/lunixs.png" alt="lnx" width="100%">
 </p>
 
-Lightweight sendWebhook API for GrowLauncher.
+`Lightweight sendWebhook API for GrowLauncher.`
 
-## Installation
+## Loader
 
 ```lua
 local api = load(fetch("https://lunix.space/assets/lunix.lua"))()
 ```
 
-### `sendWebhook(data)`
+### `sendWebhook(...)`
 
-Sends a Discord webhook through the Lunix webhook gateway.
+Sends a Discord webhook.
 
 #### Properties
 
 | Property | Type | Required | Description |
 |---|---|---|---|
 | `url` | `string` | ☑ | `Discord webhook Url.` |
-| `content` | `string` | ☒	 | `Plain message content.` |
+| `content` | `string` | ☒	| `Plain message content.` |
 | `username` | `string` | ☒	 | `Override webhook username.` |
 | `avatar_url` | `string` | ☒	 | `Override webhook avatar.` |
 | `embed.title` | `string` | ☒	 | `Embed title.` |
@@ -46,9 +46,9 @@ Sends a Discord webhook through the Lunix webhook gateway.
 ## Example
 
 ```lua
-local lunix = load(fetch('https://lunix.space/assets/lunix.lua'))()
+local api = load(fetch('https://lunix.space/assets/lunix.lua'))()
 
-lunix.sendWebhook({
+api.sendWebhook({
     url = 'webhook url.',
     username = 'GrowLauncher Bot',
     embed = {
