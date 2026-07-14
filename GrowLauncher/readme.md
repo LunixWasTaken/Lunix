@@ -1,7 +1,7 @@
 # Lunix API
 
 <p align="center">
-  <img src="https://lunix.space/assets/lunix.png" alt="gl" width="100%">
+  <img src="https://lunix.space/assets/lunix.png" alt="lnx" width="100%">
 </p>
 
 Lightweight Lua API for GrowLauncher.
