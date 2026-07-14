@@ -14,4 +14,4 @@
 
 * `sendWebhook Api.`
 
-[LunixScript](./GrowLauncher)
+* [Click Here](./GrowLauncher)
