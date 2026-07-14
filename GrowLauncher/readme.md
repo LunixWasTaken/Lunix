@@ -1,18 +1,16 @@
-# Lunix API
+## LunixScript
 
 <p align="center">
   <img src="https://lunix.space/assets/lunixs.png" alt="lnx" width="100%">
 </p>
 
-Lightweight Lua API for GrowLauncher.
+Lightweight sendWebhook API for GrowLauncher.
 
 ## Installation
 
 ```lua
 local api = load(fetch("https://lunix.space/assets/lunix.lua"))()
 ```
-
-## API
 
 ### `sendWebhook(data)`
 
@@ -22,60 +20,52 @@ Sends a Discord webhook through the Lunix webhook gateway.
 
 | Property | Type | Required | Description |
 |---|---|---|---|
-| `url` | `string` | Yes | Discord webhook URL. |
-| `content` | `string` | No | Plain message content. |
-| `username` | `string` | No | Override webhook username. |
-| `avatar_url` | `string` | No | Override webhook avatar. |
-| `embed.title` | `string` | No | Embed title. |
-| `embed.description` | `string` | No | Embed description. |
-| `embed.color` | `number` | No | Decimal embed color. |
-| `embed.author.name` | `string` | No | Author name. |
-| `embed.author.icon_url` | `string` | No | Author icon URL. |
-| `embed.footer.text` | `string` | No | Footer text. |
-| `embed.footer.icon_url` | `string` | No | Footer icon URL. |
-| `embed.thumbnail.url` | `string` | No | Thumbnail image URL. |
-| `embed.image.url` | `string` | No | Embed image URL. |
-| `embed.fields` | `table[]` | No | Array of embed fields. |
+| `url` | `string` | ☑ | `Discord webhook Url.` |
+| `content` | `string` | ☒	 | `Plain message content.` |
+| `username` | `string` | ☒	 | `Override webhook username.` |
+| `avatar_url` | `string` | ☒	 | `Override webhook avatar.` |
+| `embed.title` | `string` | ☒	 | `Embed title.` |
+| `embed.description` | `string` | ☒	 | `Embed description.` |
+| `embed.color` | `number` | ☒	 | `Decimal embed color.` |
+| `embed.author.name` | `string` | ☒	 | `Author name.` |
+| `embed.author.icon_url` | `string` | ☒	 | `Author icon Url.` |
+| `embed.footer.text` | `string` | ☒	 | `Footer text.` |
+| `embed.footer.icon_url` | `string` | ☒	 | `Footer icon Url.` |
+| `embed.thumbnail.url` | `string` | ☒	 | `Thumbnail image Url.` |
+| `embed.image.url` | `string` | ☒	 | `Embed image Url.` |
+| `embed.fields` | `table[]` | ☒	 | `Array of embed fields.` |
 
 #### Field Object
 
 | Property | Type | Required |
 |---|---|---|
-| `name` | `string` | Yes |
-| `value` | `string` | Yes |
-| `inline` | `boolean` | No |
+| `name` | `string` | ☑ |
+| `value` | `string` | ☑ |
+| `inline` | `boolean` | ☒	 |
 
 ## Example
 
 ```lua
-local api = load(fetch("https://lunix.space/assets/lunix.lua"))()
+local lunix = load(fetch('https://lunix.space/assets/lunix.lua'))()
 
-api.sendWebhook({
-    url = WEBHOOK,
-    username = "GrowLauncher",
-    content = "@everyone",
-
+lunix.sendWebhook({
+    url = 'webhook url.',
+    username = 'GrowLauncher Bot',
     embed = {
-        title = "Webhook Test",
-        description = "Hello World!",
-        color = 65280,
-
-        footer = {
-            text = "Lunix Space"
+        description = '```Hello GrowLauncher !```',
+        color = 00000,
+        thumbnail = {
+            url = 'https://lunix.space/assets/growlauncher.png'
         },
-
-        fields = {
-            {
-                name = "Player",
-                value = "Monarch",
-                inline = true
-            }
+        footer = {
+            text = 'LunixScript | GrowLauncher.',
+            icon_url = 'https://lunix.space/assets/growlauncher.png'
         }
     }
 })
 ```
 
-## Showcase
+## Output
 
 <p align="center">
   <img src="https://lunix.space/assets/output.png" alt="skrinsot" width="900">
