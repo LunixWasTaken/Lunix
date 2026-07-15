@@ -29,4 +29,4 @@
 
 ### GentaHax Script :
 
-* [BuyVendAndAddToExtraInventoryGTFY](./GentaHax/GTFY)
+* [BuyVendGTFY](./GentaHax/GTFY/vend.lua)
