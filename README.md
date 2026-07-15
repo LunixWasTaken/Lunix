@@ -25,3 +25,8 @@
 ### GrowLauncher Script :
 
 * [sendWebhook Api](./GrowLauncher)
+
+
+### GentaHax Script :
+
+* [BuyVendAndAddToExtraInventoryGTFY](./GentaHax/GTFY)
