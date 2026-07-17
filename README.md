@@ -16,17 +16,3 @@
 </a>
 </p>
 </div>
-
-
-
-
-
-
-### GrowLauncher Script :
-
-* [sendWebhook Api](./GrowLauncher)
-
-
-### GentaHax Script :
-
-* [BuyVendGTFY](./GentaHax/GTFY/vend.lua)
